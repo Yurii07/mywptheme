@@ -1,0 +1,151 @@
+.blogWrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  background: url("../img/backgroundblog.png");
+  color: $white;
+
+  .postInner {
+    width: 100%;
+    max-width: 1012px;
+    display: block;
+    margin: 0 auto;
+    min-height: 450px;
+    z-index: 1;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 50px;
+
+    .row {
+      margin: 0;
+    }
+
+    .postContainer {
+      margin-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+
+      .row {
+        height: 300px;
+        transition: .2s;
+      }
+
+      .myImgBig {
+        height: 100%;
+      }
+
+      .col-md-8,
+      .col-md-4,
+      .col-md-6,
+      .col-md-12 {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .innerInfo {
+        background-color: $white;
+        color: $black;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        padding: 10px;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .postbtn {
+          background: transparent;
+          border: 2px solid $ccc;
+          border-radius: 5px;
+
+          &:hover {
+            border: 2px solid #EEEE00;
+          }
+        }
+      }
+
+      .doucol {
+
+        p {
+          column-count: 2;
+        }
+      }
+    }/*end postContainer*/
+
+    .postMiddle {
+      padding-right: 10px;
+    }
+
+    .allPosts {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (min-width: $screen-md-min) {
+      .row {
+
+        &:hover {
+          height: 305px;
+        }
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      .postContainer {
+
+        .withoutImg {
+          height: unset;
+        }
+
+        .col-md-8,
+        .col-md-4,
+        .col-md-6,
+        .col-md-12 {
+
+          &:last-child {
+            height: unset;
+          }
+        }
+
+        .doucol {
+
+          p {
+            column-count: 1;
+          }
+        }
+      }
+
+      .reverseContainer {
+        .col-xs-12 {
+
+          &:first-child {
+            height: unset;
+          }
+
+          &:last-child {
+            height: 300px;
+          }
+        }
+      }
+
+      .info {
+
+        p {
+          line-height: 18px;
+        }
+      }
+    }/*end media 992*/
+
+    @media (max-width: 1024px) {
+      .postContainer {
+        padding: 0 5px;
+      }
+    }
+  }/*end postInner*/
+}/*end blogWrap*/

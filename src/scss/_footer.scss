@@ -1,0 +1,101 @@
+// page footer
+
+.page-footer {
+  background-image: url('../img/yura/footer_02.png');
+  background-size: cover;
+  .container-fluid {
+
+    .row {
+
+      .col-md-6 {
+
+        .navbar-nav-footer {
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          li {
+
+            a {
+              font-size: 20px;
+              font-family: 'Exo 2', sans-serif;
+              text-align: left;
+              color: #fff;
+              &:hover {
+                color: #ccc;
+                text-decoration: none;
+              }
+
+            }
+          }
+        }
+
+        .share_icons-wrap {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          width: 27%;
+          justify-content: space-around;
+          li {
+            width: 25px;
+            list-style: none;
+            a {
+
+            }
+
+            .share-icon {
+
+              .fa {
+
+              }
+            }
+          }
+        }
+
+        .footer-copyright {
+          color: #fff;
+          br {
+
+          }
+        }
+      }
+
+      .clearfix {
+
+      }
+
+      .col-md-3 {
+
+        .text-uppercase {
+          font-size: 18px;
+          font-family: 'Exo 2', sans-serif;
+          color: rgb(96, 170, 219);
+          text-align: left;
+          z-index: 295;
+        }
+
+        .list-unstyled {
+          &:hover{
+            text-decoration: none;
+          }
+
+          li {
+
+            a {
+              color: #fff;
+            }
+            p{
+              font-family: 'Exo 2';
+              font-weight: lighter;
+              font-size: 18px;
+              line-height: 1.444;
+              z-index: 295;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

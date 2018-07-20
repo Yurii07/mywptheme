@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+
+}
+
+p {
+  font-size: 0.94em;
+  font-family: "Comfortaa";
+}
+
+.banner {
+  background-image: url('../img/background.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+  padding-top: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .container {
+
+    .row {
+
+      .col {
+        .list {
+          .list-item {
+
+            span {
+
+            }
+
+            .item-bigsize {
+
+            }
+            p {
+
+            }
+
+          }
+        }
+        /*end of list*/
+
+        .btn {
+
+        }
+        .order {
+
+        }
+
+        .col {
+
+        }
+
+        .laptop {
+          img {
+
+          }
+
+        }
+      }
+    }
+
+  }
+  /*end of container*/
+
+}
+
+/*end of baner*/
+
+/*navbar*/
+
+.banner {
+  .container {
+    .row {
+      .col {
+        .list {
+          padding: 60px 0 50px 0;
+          .list-item {
+            list-style: none;
+            position: relative;
+            padding: 20px 0 30px 60px;
+            item-bigsize {
+              font-size: 24px;
+              font-family: "Comfortaa";
+              color: rgb(255, 255, 255);
+              line-height: 0.833;
+              text-align: left;
+              z-index: 109;
+            }
+            p {
+              font-size: 15px;
+              font-family: "Comfortaa";
+              color: rgb(255, 255, 255);
+              line-height: 0.833;
+              text-align: left;
+              z-index: 109;
+            }
+          }
+        }
+        button {
+          &:hover {
+            background-color: #008CBA;
+          }
+          font-size: 15px;
+          color: #fff;
+          background-color: #2d98d4;
+          font-family: "Exo2";
+          color: rgb(255, 255, 255);
+          text-align: center;
+          z-index: 98;
+        }
+
+      }
+      .laptop {
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+//banner
+
+ul.list li:first-child:before {
+  background: transparent url("../img/yura/TestReady_093.png") scroll 0 0 no-repeat;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+ul.list li:nth-child(2):before {
+  background: transparent url("../img/yura/TestReady_06.png") scroll 0 0 no-repeat;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+ul.list li:nth-child(3):before {
+  background: transparent url("../img/yura/TestReady_08.png") scroll 0 0 no-repeat;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+ul.list li:before {
+  background-position: 0px -16px;
+}
+
+ul.list li:after {
+  content: '•••';
+  text-align: left;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 15px;
+  letter-spacing: 4px;
+  margin-top: 2px;
+  position: absolute;
+  left: 10px;
+  color: #fff;
+}
+
+ul.list li:last-child:after {
+  //content: '';
+}
+
+.enpty-div {
+  height: 500px;
+}
+
+.advantages {
+  .linear {
+    background: linear-gradient(to right, #f3f5f6 0%, #d6dddf 100%);
+    padding-bottom: 60px;
+    padding-top: 50px;
+    .container {
+      .row {
+        h3.advantages {
+          &:before {
+            background-image: url('../img/yura/TestReady1_03.png');
+            background-size: 100px 100px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            content: "";
+            position: absolute;
+            top: -65px;
+            left: -25px;
+          }
+          font-size: 2.1em;
+          font-family: "Comfortaa";
+          color: rgb(68, 68, 68);
+          text-align: left;
+          z-index: 138;
+          padding: 0;
+          position: relative;
+          padding-left: 33px;
+          padding-top: 4px;
+        }
+      }
+      .row.around-md {
+        .col-md {
+          p {
+            font-size: 20px;
+            font-family: "Exo2";
+            color: rgb(68, 68, 68);
+            text-align: center;
+            z-index: 126;
+          }
+        }
+        .col-md:first-child {
+          background-color: #edf0f1;
+        }
+        .col-md:nth-child(2) {
+          background-color: #e8ebed;
+        }
+        .col-md:nth-child(3) {
+          background-color: #e2e7e8;
+        }
+        .col-md:nth-child(4) {
+          background-color: #dce2e4;
+        }
+        .col-md img {
+          display: block;
+          margin: 0 auto;
+          padding: 70px 0 40px 0;
+        }
+        .col-md:nth-child(1) {
+          img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //width: 69%;
+            width: 172px;
+            height: auto;
+          }
+        }
+        .col-md:nth-child(2) {
+          img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 34%;
+            width: 86px;
+            height: auto;
+          }
+        }
+        .col-md:nth-child(3) {
+          img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 49%;
+            width: 125px;
+            height: auto;
+          }
+        }
+
+      }
+    }
+  }
+} /*end advantages*/
+
+
+/*__________blog_________*/
+
+.blog{
+  background-image: url('../img/yura/blog_02.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .container{
+    h2.advantages {
+      &:before {
+        background-image: url('../img/yura/blog02_03.png');
+        background-size: 100px 100px;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        content: "";
+        position: absolute;
+        top: -65px;
+        left: -25px;
+      }
+      position: relative;
+      padding-left: 42px;
+      padding-top: 15px;
+      font-size: 26px;
+      font-family: "Comfortaa";
+      color: rgb(255, 255, 255);
+      z-index: 250;
+    }
+
+    .my-3{
+      .col-md-7 {
+        .row {
+          .laptobBook {
+
+          }
+          .pl {
+
+          }
+        }
+      }
+    }
+    .row{
+
+    }
+    a.btn{
+      &:hover {
+        text-decoration: none;
+      }
+      color: #fff;
+      text-decoration: underline;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+* a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.radius {
+  border-radius: 2px;
+}
+
+.shadowDepth1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+/* Card Styles*/
+.blog_wrap {
+
+  .row {
+
+    .col-md-7 {
+
+      .first_blog {
+
+        img {
+
+        }
+      }
+    }
+
+    .col-md-5 {
+
+      .card {
+
+        .card__content {
+
+          .card__share {
+
+            .card__social {
+
+              .share-icon {
+
+                .fa {
+
+                }
+              }
+            }
+
+            .share-toggle {
+
+            }
+          }
+
+          .card__article {
+
+            h5 {
+
+              a {
+
+              }
+            }
+
+            p {
+
+            }
+
+            .social-icons {
+
+              a {
+
+                .fa {
+
+                }
+              }
+
+              .fa-long-arrow {
+
+                .fa {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  background-color: #fff;
+  height: 100%;
+}
+
+.card__padding {
+  padding: 1.6rem;
+}
+
+.card__content {
+  position: relative;
+}
+
+.card__article a {
+  text-decoration: none;
+  color: #444;
+  transition: all 0.5s ease;
+}
+
+.card__article a:hover {
+  color: #2980b9;
+}
+
+.card__share {
+  float: right;
+  position: relative;
+  margin-top: -42px;
+}
+
+.card__social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  width: 160px;
+  transform: translateZ(0);
+  transform: translateX(0px);
+  transition: transform 0.35s ease;
+}
+
+.card__social--active {
+  visibility: visible;
+  z-index: 3;
+  transform: translateZ(0);
+  transform: translateX(-48px);
+  transition: transform 0.35s ease;
+}
+
+.share-toggle {
+  z-index: 2;
+}
+
+.share-toggle:before {
+  content: "\f1e0";
+  font-family: "FontAwesome";
+  color: #3498db;
+}
+
+.share-toggle.share-expanded:before {
+  content: "\f00d";
+}
+
+.share-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  outline: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon:hover,
+.share-icon:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #00abe3;
+}
+
+.googleplus {
+  background-color: #d3492c;
+}
+
+.facebook,
+.twitter,
+.googleplus {
+  color: #fff;
+}
+
+.facebook:hover,
+.twitter:hover,
+.googleplus:hover {
+  color: #eee;
+}
+
+.row .cards {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons {
+  position: relative;
+}
+
+.social-icons a.fa-long-arrow {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+  border-width: 2px;
+  border-color: rgb(196, 196, 197);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 7px;
+  position: absolute;
+  right: 20px;
+}
+
+.social-icons a {
+
+  color: rgb(68, 68, 68);
+  border-width: 2px;
+  border-color: rgb(196, 196, 197);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  margin: 3px;
+  padding: 5px;
+  z-index: 217;
+}
+
+.social-icons a:hover {
+  background-color: rgb(196, 196, 197);
+  color: #fff;
+}
+
+.blog_wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.blog .container h2.advantages {
+  position: relative;
+  padding-left: 42px;
+  padding-top: 15px;
+  font-size: 26px;
+  font-family: "Comfortaa";
+  color: rgb(255, 255, 255);
+  z-index: 250;
+
+}
+
+.blog .container h2.advantages:before {
+  background-image: url('../img/yura/blog02_03.png');
+  background-size: 100px 100px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  top: -65px;
+  left: -25px;
+}
+
+.cols1 {
+  width: 60%;
+  height: auto;
+}
+
+.cols2 {
+  width: 40%;
+  height: auto;
+}
+
+.pr, .pl {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card-2-colum {
+  max-height: 160px;
+}
+
+.card__article p {
+  font-size: 0.88em;
+  font-family: 'Exo 2';
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  text-align: left;
+
+}
+
+.card__article h5 a {
+  font-size: 1em;
+  font-family: 'Exo 2';
+  font-weight: 400;
+}
+
+.laptobBook {
+  background: url('../img/yura/TestReady_03_06.png') 100% 100% no-repeat;
+  background-size: cover;
+}
+
+p.pb__icons {
+  padding-bottom: 40px;
+}
+
+.my-3 {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
+.glasses {
+  background: url('../img/yura/TestReady_03_10.png') 65% 100% no-repeat; /* Добавляем фон */
+  background-size: cover;
+}
+
+a.pull-right {
+  color: #fff;
+  text-decoration: underline;
+}

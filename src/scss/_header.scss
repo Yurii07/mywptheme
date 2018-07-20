@@ -1,0 +1,37 @@
+
+header {
+
+  .container {
+
+    .navbar  {
+
+      .collapse{
+
+        .nav {
+          z-index: 5;
+          display: flex;
+          position: relative;
+          margin-bottom: 15px;
+
+          .menu-item {
+            max-width: 800px;
+            position: relative;
+            padding: 0 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+
+            a {
+              color: rgb(68, 68, 68);
+              font-size: 1.2em;
+              font-family: "Exo2";
+              text-align: left;
+            }
+          }
+        }
+      }
+    }/*end of navbar */
+
+  }
+}

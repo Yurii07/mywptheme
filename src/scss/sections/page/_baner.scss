@@ -1,0 +1,209 @@
+.bannerWrap {
+  background: url("../img/background.png");
+  color: $white;
+  height: 525px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 50px;
+
+  .innerContainer {
+    margin-top: 70px;
+
+    .nav {
+
+      .bannerFirst {
+
+        &:before {
+          content: '';
+          background: url("../img/audit.png");
+          display: inline-block;
+          vertical-align: middle;
+          height: 48px;
+          width: 48px;
+          margin-right: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .bannerSecond {
+
+        &:before {
+          content: '';
+          background: url("../img/optimise.png");
+          display: inline-block;
+          vertical-align: middle;
+          height: 48px;
+          width: 48px;
+          margin-right: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .bannerThird {
+
+        &:before {
+          content: '';
+          background: url("../img/seo.png");
+          display: inline-block;
+          vertical-align: middle;
+          height: 48px;
+          width: 48px;
+          margin-right: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      li {
+        margin-bottom: 70px;
+
+        &:last-child {
+          margin-bottom: 50px;
+        }
+
+        span {
+          display: block;
+          font-size: 16px;
+        }
+
+        p {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 26px;
+          line-height: 20px;
+          width: 46%;
+        }
+      }/*end li*/
+    }/*end nav*/
+
+    .bannerContainer_left-textcenter {
+      width: 60%;
+      text-align: center;
+
+      .mybtn {
+        display: inline-block;
+        color: $white;
+        background-color: $blue-light;
+        padding: 10px 20px;
+        text-decoration: none !important;
+        border-radius: 3px;
+        border: none;
+      }
+    }/*end bannerContainer_left-textcenter*/
+
+    .bannerContainerImg {
+      background: url("../img/comp.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      display: inline-block;
+      max-width: 521px;
+      height: 578px;
+      position: absolute;
+      right: 15%;
+      top: -2%;
+      z-index: 1;
+    }
+  }/*end innerContainer*/
+}/*end bannerWrap*/
+
+@media (max-width: $screen-sm-max) {
+  .bannerWrap {
+    padding: 20px 0;
+
+    .innerContainer {
+
+      .bannerContainerImg {
+        background-size: contain;
+        top: 2%;
+        right: 2%;
+        width: 50%;
+      }
+
+      .nav {
+
+        li {
+          margin-bottom: 40px;
+
+          &:last-child {
+            margin-bottom: 20px;
+          }
+
+          p {
+            width: 80%;
+          }
+        }
+      }
+
+      .bannerContainer_left-textcenter {
+        width: 80%;
+      }
+    }/*end innerContainer*/
+  }/*end bannerWrap*/
+}
+
+@media (max-width: $screen-xs-max) {
+  .bannerWrap {
+    padding: 20px 10px;
+
+    .innerContainer {
+
+      .bannerContainerImg {
+        display: none;
+      }
+
+      .nav {
+
+        li {
+
+          p {
+            width: 70%;
+          }
+        }
+      }
+
+      .bannerContainer_left-textcenter {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bannerWrap {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bannerWrap {
+    padding: 20px;
+
+    .innerContainer {
+
+      .nav {
+        .bannerFirst::before {
+          background-repeat: no-repeat;
+          width: 10%;
+          margin: 0;
+          min-width: 60px;
+        }
+
+        .bannerSecond::before {
+          background-repeat: no-repeat;
+          width: 10%;
+          margin: 0;
+          min-width: 60px;
+        }
+
+        .bannerThird::before {
+          background-repeat: no-repeat;
+          width: 10%;
+          margin: 0;
+          min-width: 60px;
+        }
+      }
+    }
+  }
+}
