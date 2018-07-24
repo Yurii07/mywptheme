@@ -1,3 +1,10 @@
+<?php
+/**
+Template Name: Footer
+ **/
+
+?>
+
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
@@ -11,12 +18,33 @@
             <div class="col-md-6 mt-md-0 mt-3">
 
                 <!-- Content -->
-                <ul class="navbar-nav-footer">
-                    <li><a href="">Услугии</a></li>
-                    <li><a href="">Портфолио</a></li>
-                    <li><a href="">Блог</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                        'menu' => 'secondary',
+                        'theme_location' => 'secondary',
+                        'depth' => 2,
+                        'container' => 'div',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id' => 'footer_menu',
+                        'menu_class' => 'nav navbar-nav',
+                        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                        'walker' => new wp_bootstrap_navwalker())
+                ); ?>
+
+                <?php wp_nav_menu( array(
+                        'container_class' => 'menu-header',
+                        'theme_location' => '' ) ); ?>
+
+<!--                <ul class="navbar-nav-footer">-->
+<!---->
+<!--                    <li><a href="#">Услугии</a></li>-->
+<!--                    <li><a href="#">Портфолио</a></li>-->
+<!--                    <li><a href="#">Блог</a></li>-->
+<!--                    <li><a href="#">Контакты</a></li>-->
+<!--                </ul>-->
+
+
+
                 <ul class="share_icons-wrap">
                <li><a href=""><a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a></a></li>
                     <li><a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a></li>
