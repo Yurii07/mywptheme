@@ -44,3 +44,4 @@ function remove_head_scripts() {
 //}
 //
 //add_action( 'wp_enqueue_scripts', 'theme_js');
+//

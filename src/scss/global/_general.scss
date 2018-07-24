@@ -4,7 +4,7 @@
    Typography
 -----------------------------------------*/
 body {
-  font-family: 'MetaPro';
+  font-family: 'Comfortaa';
   background: $white;
 }
 
@@ -13,42 +13,49 @@ body {
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-book.otf') format ('otf');
-  font-weight: 300;
+  //error
+  //font-family: "Comfortaa";
+  //src: url('../fonts/comfortaa/Comfortaa-Regular.ttf') format ('ttf');
+  //font-weight: 400;
+  //font-style: normal;
+  font-family: "Comfortaa";
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-normal.otf') format ('otf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-medium.otf') format ('otf');
   font-weight: 500;
-  font-style: normal;
+  src: url("../fonts/comfortaa/Comfortaa-Regular.ttf") format("ttf"),
+  url("../fonts/comfortaa/Comfortaa-Regular.ttf") format("woff2"),
+  url("../fonts/comfortaa/Comfortaa-Regular.ttf") format("woff");
 }
 
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-bold.otf') format ('otf');
-  font-weight: 700;
+  font-family: "Exo2";
   font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/exo2/Exo2-Regular.ttf") format("ttf"),
+  url("../fonts/exo2/Exo2-Regular.ttf") format("woff2"),
+  url("../fonts/exo2/Exo2-Regular.ttf") format("woff");
 }
 
-@font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-black.otf') format ('otf');
-  font-weight: 900;
-  font-style: normal;
-}
-
-
-
+//
+//@font-face {
+//  font-family: 'MetaPro';
+//  src: url('../fonts/metapro/metapro-medium.otf') format ('otf');
+//  font-weight: 500;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'MetaPro';
+//  src: url('../fonts/metapro/metapro-bold.otf') format ('otf');
+//  font-weight: 700;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'MetaPro';
+//  src: url('../fonts/metapro/metapro-black.otf') format ('otf');
+//  font-weight: 900;
+//  font-style: normal;
+//}
 
 /* HEADINGS */
 
@@ -58,17 +65,17 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   font-family: 'MetaPro';
   font-weight: normal;
 }
 
 /*Wrapper*/
-.container {
+.container-fluid {
   //min-width: 320px;
-  padding: 0;
+  //padding: 0;
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
 
   }
 }
@@ -77,17 +84,17 @@ p{
   //margin: 22px 10px 0px 10px;
   //margin-top: 50px;
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
     margin: auto;
     //margin-top: 100px;
   }
 }
 
 .navbar {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
-*{
+* {
   outline: 0px solid red;
   box-sizing: border-box;
 }
@@ -100,13 +107,12 @@ li {
   list-style-type: none;
 }
 
-
-
 /* Hides navigation links and site footer when infinite scroll is active */
 .infinite-scroll #navigation,
 .infinite-scroll.neverending #footer {
   display: none;
 }
+
 /* Shows the footer again in case all posts have been loaded */
 .infinity-end.neverending #footer {
   display: block;
@@ -126,7 +132,7 @@ li {
 }
 
 .hrefTypeOne {
-  background: $postcolor!important;
+  background: $postcolor !important;
 }
 
 .innerContainer {

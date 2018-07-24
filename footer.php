@@ -2,7 +2,7 @@
 <footer class="page-footer font-small blue pt-4">
 
     <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
+    <div class="container text-center text-md-left">
 
         <!-- Grid row -->
         <div class="row">
@@ -18,9 +18,7 @@
                     <li><a href="">Контакты</a></li>
                 </ul>
                 <ul class="share_icons-wrap">
-                    <li>
-                        <a href=""><a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a></a>
-                    </li>
+               <li><a href=""><a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a></a></li>
                     <li><a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a></li>
                     <li><a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a></li>
                 </ul>

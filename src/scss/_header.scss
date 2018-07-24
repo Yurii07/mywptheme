@@ -1,37 +1,40 @@
+.header {
+  .row {
+    .col-md-3 {
+      .logo {
 
-header {
+        margin: 0 auto;
+      }
+    }
+    .col-md-6 {
 
-  .container {
+      .navbar {
 
-    .navbar  {
+        padding: 0;
 
-      .collapse{
+        .navbar-collapse {
 
-        .nav {
-          z-index: 5;
-          display: flex;
-          position: relative;
-          margin-bottom: 15px;
-
-          .menu-item {
-            max-width: 800px;
-            position: relative;
-            padding: 0 30px;
+          .navbar-nav {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-
-            a {
-              color: rgb(68, 68, 68);
-              font-size: 1.2em;
-              font-family: "Exo2";
-              text-align: left;
+            width: 100%;
+            justify-content: flex-end;
+            li{
+              padding: 22px 15px;
             }
           }
         }
       }
-    }/*end of navbar */
-
+    }
+    .col-md-3 {
+      .contacts {
+        text-align: center;
+        a {
+          color: #2699de;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
